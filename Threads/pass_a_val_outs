@@ -1,0 +1,6 @@
+The value passed to the thread is: 1
+The value passed to the thread is: 4
+The value passed to the thread is: 2
+The value passed to the thread is: 3
+The value passed to the thread is: 5
+All threads have finished their job!
