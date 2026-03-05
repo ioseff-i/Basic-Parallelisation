@@ -21,8 +21,9 @@ int main(){
         int* val = malloc(sizeof(int));
         *val = i + 1; // Assign a unique value to each thread
         pthread_create(&threads[i], NULL, job, val);
-
+        free(val); 
     }
+    
 
     for(int i = 0; i < num_threads; i++){
         pthread_join(threads[i], NULL);
